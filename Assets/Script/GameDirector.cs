@@ -48,7 +48,7 @@ public class GameDirector : MonoBehaviour
         else if (5 <= this.time && this.time <10)
         {
             this.generator.GetComponent<ItemGenerator>().SetPrameter(
-                0.8f, -0.05f, 6);
+                0.5f, -0.05f, 6);
         }
         else if (10 <= this.time && this.time < 20)
         {
