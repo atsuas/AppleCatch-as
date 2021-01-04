@@ -16,7 +16,10 @@ public class ItemGenerator : MonoBehaviour
         if (this.delta > this.span)
         {
             this.delta = 0;
-            Instantiate(applePrefab);
+            GameObject item = Instantiate(applePrefab) as GameObject;
+            float x = Random.Range(-1, 2);
+            float z = Random.Range(-1, 2);
+            item.transform.position = new Vector3(x, 4, z);
         }
     }
 }
