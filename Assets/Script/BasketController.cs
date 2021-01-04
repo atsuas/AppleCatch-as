@@ -6,7 +6,14 @@ public class BasketController : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("キャッチ!");
+        if (other.gameObject.tag == "Apple")
+        {
+            Debug.Log("Tag=Apple");
+        }
+        else
+        {
+            Debug.Log("Tag=Bomb");
+        }
         Destroy(other.gameObject);
     }
 
